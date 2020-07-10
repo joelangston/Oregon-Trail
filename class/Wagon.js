@@ -1,6 +1,6 @@
 class Wagon {
 
-    constructor(capacity, passengers) {
+    constructor(capacity) {
         this.capacity = capacity
         this.passengers = []
     }
@@ -18,19 +18,19 @@ class Wagon {
                 return true
             }
         }
-            return false
-        
+        return false
+
     }
-    totalFood(){
+    totalFood() {
         let food = 0
-        for(let index = 0; index < this.passengers.length; index += 1){
+        for (let index = 0; index < this.passengers.length; index += 1) {
             food = food + this.passengers[index].food
         }
-    
+
         return food
     }
-        
-    }
+
+}
 
 
 

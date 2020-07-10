@@ -1,5 +1,5 @@
 class Traveler{
-    constructor(name, food, isHealthy){
+    constructor(name){
         this.name = name
         this.food = 1
         this.isHealthy = true
@@ -9,8 +9,8 @@ class Traveler{
     }
     eat(){
         if(this.food > 0){
-            this.food = this.food -1
-            
+            this.food = this.food - 1
+        
         }
         else {
             this.isHealthy = false
